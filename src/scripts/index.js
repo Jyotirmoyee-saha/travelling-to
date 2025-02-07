@@ -1,7 +1,7 @@
 async function loadData() {
     try {
         console.log('Fetching destinations...');
-        const response = await fetch('../src/scripts/utils.js');
+        const response = await fetch('../src/public/utils.js');
         const data = await response.json();
         console.log('Destinations loaded:', data);
 
@@ -52,7 +52,7 @@ loadData();
 
 let heroSection = async function () {
     try {
-        const response = await fetch('https://api.aviationstack.com/v1/flights?access_key=3a3f998fb56c7fb9df09392c1e7a80bb');
+        const response = await fetch('https://api.aviationstack.com/v1/flights?access_key=19f31a9685a61b5f94aa96bd8e160d77');
         const data = await response.json();
         console.log('API Response:', data);
         
@@ -174,7 +174,7 @@ let heroSection = async function () {
 
 let travelSpots = async function () {
     try {
-        const response = await fetch('../src/scripts/travelSpots.js');
+        const response = await fetch('../src/public/travelSpots.js');
         const data = await response.json();
 
         const container = document.querySelector('#travelSpotsContainer');
@@ -200,7 +200,7 @@ let travelSpots = async function () {
 
 var galary = async function () {
     try {
-        const response = await fetch('../src/scripts/galary.js');
+        const response = await fetch('../src/public/galary.js');
         const data = await response.json();
 
         const container = document.querySelector('#galaryContainer');
@@ -224,7 +224,7 @@ var galary = async function () {
 
 var galary2 = async function () {
     try {
-        const response = await fetch('../src/scripts/galary2.js');
+        const response = await fetch('../src/public/galary2.js');
         const data = await response.json();
 
         const container = document.querySelector('#galary2Container');
