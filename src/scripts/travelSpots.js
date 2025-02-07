@@ -54,5 +54,4 @@
         "image": "../assets/bali.jpg",
         "rating": "4"
     }
-
 ]
