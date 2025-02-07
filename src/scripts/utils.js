@@ -6,7 +6,7 @@
     "duration": "3 nights",
     "price": "₹15,999",
     "discount": "Includes extra ₹2,083 discount for packages with flights",
-    "image": "../assets/rishikesh.jpg"
+    "image": "./assets/rishikesh.jpg"
   },
   {
     "destination": "Leh-Ladakh",
@@ -15,7 +15,7 @@
     "duration": "3 nights",
     "price": "₹15,999",
     "discount": "Includes extra ₹2,083 discount for packages with flights",
-    "image": "../assets/leh.jpg"
+    "image": "./assets/leh.jpg"
   },
   {
     "destination": "Manali",
@@ -24,7 +24,7 @@
     "duration": "3 nights",
     "price": "₹15,999",
     "discount": "Includes extra ₹2,083 discount for packages with flights",
-    "image": "../assets/manali.jpg"
+    "image": "./assets/manali.jpg"
   },
   {
     "destination": "Shimla",
@@ -33,7 +33,7 @@
     "duration": "4 nights",
     "price": "₹18,499",
     "discount": "Includes extra ₹2,500 discount for packages with flights",
-    "image": "../assets/shimla.jpg"
+    "image": "./assets/shimla.jpg"
   },
   {
     "destination": "Goa",
@@ -42,7 +42,7 @@
     "duration": "5 nights",
     "price": "₹20,999",
     "discount": "Includes extra ₹3,000 discount for packages with flights",
-    "image": "../assets/goa.jpg"
+    "image": "./assets/goa.jpg"
   },
   {
     "destination": "Darjeeling",
@@ -51,7 +51,7 @@
     "duration": "3 nights",
     "price": "₹14,999",
     "discount": "Includes extra ₹1,800 discount for packages with flights",
-    "image": "../assets/darjeeling.jpg"
+    "image": "./assets/darjeeling.jpg"
   },
   {
     "destination": "Andaman Islands",
@@ -60,7 +60,7 @@
     "duration": "6 nights",
     "price": "₹28,999",
     "discount": "Includes extra ₹4,000 discount for packages with flights",
-    "image": "../assets/andaman.jpg"
+    "image": "./assets/andaman.jpg"
   },
   {
     "destination": "Coorg",
@@ -69,7 +69,7 @@
     "duration": "4 nights",
     "price": "₹17,999",
     "discount": "Includes extra ₹2,100 discount for packages with flights",
-    "image": "../assets/coorg.jpg"
+    "image": "./assets/coorg.jpg"
   },
   {
     "destination": "Ooty",
@@ -78,7 +78,7 @@
     "duration": "3 nights",
     "price": "₹16,499",
     "discount": "Includes extra ₹2,000 discount for packages with flights",
-    "image": "../assets/ooty.jpg"
+    "image": "./assets/ooty.jpg"
   },
   {
     "destination": "Jaipur",
@@ -87,6 +87,6 @@
     "duration": "3 nights",
     "price": "₹15,499",
     "discount": "Includes extra ₹1,500 discount for packages with flights",
-    "image": "../assets/jaipur.jpg"
+    "image": "./assets/jaipur.jpg"
   }
 ]
