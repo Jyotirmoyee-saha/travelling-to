@@ -1,7 +1,9 @@
-var loadDestinations = async function () {
+async function loadData() {
     try {
-        const response = await fetch('./utils.js');
+        console.log('Fetching destinations...');
+        const response = await fetch('../src/scripts/utils.js');
         const data = await response.json();
+        console.log('Destinations loaded:', data);
 
         const container = document.getElementById('destinationContainer');
         const template = document.getElementById('destinationTemplate');
@@ -44,7 +46,9 @@ var loadDestinations = async function () {
     } catch (error) {
         console.error('Error loading destinations:', error);
     }
-}();
+}
+
+loadData();
 
 let heroSection = async function () {
     try {
@@ -170,7 +174,7 @@ let heroSection = async function () {
 
 let travelSpots = async function () {
     try {
-        const response = await fetch('./travelSpots.js');
+        const response = await fetch('../src/scripts/travelSpots.js');
         const data = await response.json();
 
         const container = document.querySelector('#travelSpotsContainer');
@@ -196,7 +200,7 @@ let travelSpots = async function () {
 
 var galary = async function () {
     try {
-        const response = await fetch('./galary.js');
+        const response = await fetch('../src/scripts/galary.js');
         const data = await response.json();
 
         const container = document.querySelector('#galaryContainer');
@@ -220,7 +224,7 @@ var galary = async function () {
 
 var galary2 = async function () {
     try {
-        const response = await fetch('./galary2.js');
+        const response = await fetch('../src/scripts/galary2.js');
         const data = await response.json();
 
         const container = document.querySelector('#galary2Container');
