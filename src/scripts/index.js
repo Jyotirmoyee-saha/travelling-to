@@ -319,3 +319,10 @@ document.addEventListener('click', function(event) {
         console.log('Closed returnDateContainer');
     }
 });
+
+document.getElementById('avatar').addEventListener('click', function() {
+    const menuBox = document.querySelector('.menu-box');
+    if (menuBox) {
+        menuBox.classList.toggle('hidden');
+    }
+});
