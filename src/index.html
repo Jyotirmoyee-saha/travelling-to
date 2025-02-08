@@ -14,7 +14,8 @@
     <!-- <div class="w-full h-screen bg-red-500"> -->
     <!--NavBar-->
 
-    <div class="md:hidden flex w-fit h-fit bg-[#F5F5F5] absolute top-20 right-12 z-50 p-2 px-8 rounded-l-xl rounded-br-xl">
+    <div
+        class="md:hidden flex w-fit h-fit bg-[#F5F5F5] absolute top-20 right-12 z-50 p-2 px-8 rounded-l-xl rounded-br-xl">
         <ul class="flex flex-col items-center justify-center gap-4 text-navBar text-sm py-2">
             <li class="border-b border-navBar">
                 <a href="">Home</a>
@@ -31,7 +32,7 @@
         <div class="w-[60px] h-[60px]">
             <img src="./assets/logo.png" alt="logo">
         </div>
-        <div class="w-fit h-24 flex items-center">
+        <div class=" w-fit h-24 flex items-center">
             <ul class="md:flex hidden items-center justify-center gap-4 text-white">
                 <li>
                     <a href="">Home</a>
@@ -52,16 +53,17 @@
     <div class="w-full h-[900px] bg-heroImage bg-cover bg-center bg-no-repeat relative sm:max-xl:text-center">
 
         <img class="hidden md:flex sm:h-[900px] sm:w-full" src="./assets/background.jpg" alt="background">
-        <img class="flex md:hidden sm:h-[900px] sm:w-full h-[764px]" src="./assets/background_mobile.jpeg" alt="background">
+        <img class="flex md:hidden sm:h-[900px] sm:w-full h-[764px]" src="./assets/background_mobile.jpeg"
+            alt="background">
         <h1 class="absolute top-24  text-white lg:text-[65px] sm:text-[30px]  text-center font-bold">Your Ultimate
             Travel Companion for
             Seamless Adventures</h1>
         <div
             class="lg:w-[90%] lg:h-[500px] sm:w-[80%] sm:h-[500px] w-[90%] bg-[#002855] absolute md:top-[150px] -top-4 left-[50%] translate-x-[-50%] translate-y-[50%] rounded-t-[30px] px-10 flex flex-col items-center justify-start gap-12">
             <div
-                class="lg:w-fit lg:h-24 sm:w-full sm:h-24 w-full bg-white  rounded-xl md:-mt-12 -mt-4 flex items-center justify-between pr-4 md:gap-x-12 gap-x-8">
+                class="lg:w-fit lg:h-24 sm:w-full sm:h-24 w-full bg-white  rounded-xl md:-mt-12 -mt-4 flex items-center justify-between pr-4 md:gap-x-12 gap-x-8 overflow-hidden overflow-x-auto">
                 <div
-                    class="lg:w-24 lg:h-24 sm:w-24 sm:h-24 flex flex-col items-center justify-center sm:gap-0 gap-1 bg-[#023E7D] rounded-xl text-xs md:ml-0 ml-2 p-2">
+                    class="lg:w-24 lg:h-24 sm:w-24 sm:h-24 flex flex-col items-center justify-center sm:gap-0 gap-1 bg-[#023E7D] rounded-xl text-xs md:ml-0 ml-2 p-2 ">
                     <i class="fa fa-plane text-white lg:text-xl -rotate-12"></i>
                     <p class="text-white text-center text-wrap">Flight</p>
                 </div>
@@ -118,8 +120,8 @@
                 <div id="heroSectionContainer" class="relative ">
                     <template id="heroSectionTemplate">
                         <div
-                            class="bg-transparent border text-white p-6 rounded-lg w-full max-w-4xl cursor-pointer transition-colors duration-300">
-                            <div class="grid grid-cols-5 gap-8">
+                            class="bg-transparent border h-50 text-white p-6 rounded-lg w-full max-w-4xl cursor-pointer transition-colors duration-300 overflow-hidden">
+                            <div class="grid md:grid-cols-5 grid-cols-2 gap-8  ">
                                 <details class="space-y-1 relative border-r">
                                     <summary class="list-none cursor-pointer">
                                         <p class="text-gray-400 text-sm">From</p>
@@ -127,11 +129,15 @@
                                         <p class="text-xs text-gray-400 time-zone"></p>
                                     </summary>
                                     <div
-                                        class="from-container absolute top-full left-0 w-50 h-60 bg-gray-400 border border-gray-600 mt-2 p-4 rounded-lg shadow-xl z-20 overflow-y-auto ">
+                                        class="from-container absolute top-full left-0 w-55 h-60 bg-blue-400 border border-blue-400 mt-2 p-4 rounded-lg shadow-xl z-20 overflow-y-auto ">
                                         <input type="text" placeholder="Search cities..."
-                                            class="w-full p-3 mb-3 rounded-lg bg-white border whiteborder-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 sticky top-0" />
-                                        <div class="space-y-2 max-h-60 scrollbar-thin">
-                                            <div class="city-buttons-container">
+                                            class="w-full p-3 mb-3 rounded-lg bg-[#002855] border whiteborder-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300 sticky top-0" />
+                                        <div class="space-y-2 max-h-60 scrollbar-thin ">
+                                            <div class="city-buttons-container ">
+
+                                                <button
+                                                    class="w-full p-3 rounded-lg bg-[#002855] border border-gray-600 text-white hover:bg-[#0F3A5F] transition-colors duration-300 city-name"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +149,7 @@
                                         <p class="text-xs text-gray-400 arival-time-zone"></p>
                                     </summary>
                                     <div
-                                        class="to-container absolute top-full left-0 w-64 h-72 bg-[#002855] border border-gray-600 mt-2 p-4 rounded-lg shadow-xl z-20 overflow-y-auto scrollbar-thin">
+                                        class="to-container absolute top-full left-0 w-55 h-60 bg-blue-400 border border-white mt-2 p-4 rounded-lg shadow-xl z-20 overflow-y-auto scrollbar-thin">
                                         <input type="text" placeholder="Search cities..."
                                             class="w-full p-3 mb-3 rounded-lg bg-[#002855] border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300" />
                                         <div class="space-y-2">
@@ -159,7 +165,7 @@
                                         <p class="text-xs text-gray-400">Friday</p>
                                     </summary>
                                     <div
-                                        class="departure-date absolute top-full left-0 w-64 bg-[#002855] border border-gray-600 mt-2 p-4 rounded-lg shadow-xl z-20">
+                                        class="departure-date absolute top-full left-0 w- bg-blue-400 border border-white mt-2 p-4 rounded-lg shadow-xl z-20">
                                         <div class="space-y-2"> <input type="date"
                                                 class="w-full p-3 rounded-lg bg-[#002855] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300" />
                                         </div>
@@ -172,7 +178,7 @@
                                         <p class="text-xs text-gray-400">Thursday</p>
                                     </summary>
                                     <div
-                                        class="return-date absolute top-full left-0 w-64 bg-[#002855] border border-gray-600 mt-2 p-4 rounded-lg shadow-xl z-20">
+                                        class="return-date absolute top-full left-0 w-55 bg-blue-400 border border-white mt-2 p-4 rounded-lg shadow-xl z-20">
                                         <div class="space-y-2"> <input type="date"
                                                 class="w-full p-3 rounded-lg bg-[#002855] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300" />
                                         </div>
@@ -185,7 +191,7 @@
                                         <p class="text-xs text-gray-400">Economy/Premium Economy</p>
                                     </summary>
                                     <div
-                                        class=" traveller absolute top-full right-0 w-64 bg-[#002855] border border-gray-600 mt-2 p-4 rounded-lg shadow-xl z-20">
+                                        class=" traveller absolute top-full right-0 w-55 bg-blue-400 border border-white mt-2 p-4 rounded-lg shadow-xl z-20">
                                         <select
                                             class="w-full p-3 mb-3 rounded-lg bg-[#002855] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
                                             <option>Economy</option>
@@ -213,8 +219,9 @@
             <div class="lg:w-full lg:h-32 sm:w-full sm:h-[50%] flex flex-col text-white ">
                 <p class="md:text-lg text-xs font-semibold">Select a Special Fare</p>
                 <!-- box -->
-                 <div class="flex md:flex-row flex-col w-3/4 items-center md:justify-between justify-start mt-8 md:text-base text-xs">
-                    <div class=" flex w-full h-fit sm:w-full sm:h-fit md:border-r border-none  items-start justify-center gap-2">
+                <div class="flex md:flex-row flex-col  w-3/4 items-center  mt-8 md:text-base text-xs">
+
+                    <div class="  w-full h-fit sm:w-full sm:h-fit border-r flex items-start justify-center gap-2">
                         <div>
                             <input type="radio" name="special-fare" id="regular">
                         </div>
@@ -379,47 +386,48 @@
         </div>
     </div>
     <!--journey beyond-->
-    <div class="w-[1350px] h-[560px] px-8">
+    <div class="w-[1350px] h-[560px] px-8 ">
         <div
-            class="w-full h-[560px] flex py-8 px-8 bg-[url('/assets/background2.jpg')] bg-cover bg-center bg-no-repeat rounded-t-md">
+            class=" w-full h-[560px]  py-8 px-8  bg-[url('../assets/bgnew.jpg')] bg-cover bg-center bg-no-repeat rounded-t-md  flex lg:flex-row flex-col ">
+
             <!-- Left text section -->
             <div class="w-1/2 flex items-center px-8 py-4">
                 <div class="text-white">
-                    <p class="text-4xl font-bold mb-4">Journey Beyond Boundaries</p>
-                    <h2 class="text-2xl">Discover the World's Wonders with Ease and Excitement</h2>
+                    <p class="md:text-4xl text-sm font-bold mb-4">Journey Beyond Boundaries</p>
+                    <h2 class="md:text-2xl text-xm">Discover the World's Wonders with Ease and Excitement</h2>
                 </div>
             </div>
 
             <!-- Right form section -->
             <div class="w-1/2 flex justify-center items-center">
-                <div class="w-[480px] h-[500px] bg-white rounded-md shadow-lg ">
+                <div class="lg:w-[480px] w-[300px] lg:h-[500px] h-[320px] bg-white rounded-md shadow-lg ">
                     <form id="contactForm" onsubmit="handleSubmit(event)">
-                        <div class="w-full h-20 flex items-center justify-center text-blue-600 text-lg font-bold">
+                        <div
+                            class="w-full lg:h-20 h-5 flex items-center justify-center text-blue-600 text-lg font-bold">
                             <h1>Contact</h1>
                         </div>
                         <div class="w-full h-fit flex flex-col gap-4 p-4 ">
                             <label for="name"></label>
                             <input
-                                class="border w-full h-10 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
+                                class="border w-full lg:h-10 h-5 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
                                 type="text" placeholder="Name" id="name" name="entry.2032001086" required>
                             <label for="email"></label>
                             <input
-                                class="border-2 w-full h-10 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
+                                class="border-2 w-full lg:h-10 h-5 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
                                 type="email" placeholder="Email Id" id="email" name="entry.202403497" required>
                             <input
-                                class="border-2 w-full h-10 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
+                                class="border-2 w-full lg:h-10 h-5 px-4 rounded-md bg-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500"
                                 type="text" placeholder="Subject" id="subject" name="entry.1696993396">
                             <textarea
-                                class="border-2 w-full h-20 px-4 py-3 rounded-md bg-gray-100 placeholder-gray-400 resize-none focus:outline-none focus:border-blue-500"
+                                class="border-2 w-full lg:h-20 h-10 px-4 py-3 rounded-md bg-gray-100 placeholder-gray-400 resize-none focus:outline-none focus:border-blue-500"
                                 placeholder="Message" id="message" name="entry.212117905"></textarea>
 
                             <div class="flex items-center gap-2 text-gray-600">
                                 <input type="checkbox" id="newsletter" class="w-4 h-4 accent-blue-600">
                                 <label for="newsletter" class="text-sm">Subscribe to our newsletter</label>
                             </div>
-
                             <button
-                                class="w-full h-10 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium mt-2">
+                                class="w-full lg:h-10 h-5 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium mt-2">
                                 Submit
                             </button>
                         </div>
@@ -429,9 +437,9 @@
         </div>
     </div>
     <!--information-->
-    <div class="w-full h-[448px] bg-white border-b-2 border-gray-400 px-8">
-        <div class="w-full h-full flex justify-between gap-2 p-8">
-            <div class="w-full h-[400px]  flex rounded-b-lg">
+    <div class="w-full h-[448px] bg-white border-b-2 border-gray-400 px-8  ">
+        <div class="w-full h-full flex justify-between gap-2 p-8 ">
+            <div class="w-full h-[400px]  flex rounded-b-lg  overflow-hidden overflow-x-auto">
                 <div class="w-2/6 h[400px] bg-white-700 px-2">
                     <div class="w-1/2 h-full">
                         <div class="w-full h-1/3 flex items-center gap-2">

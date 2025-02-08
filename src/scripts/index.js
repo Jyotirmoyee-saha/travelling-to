@@ -52,7 +52,7 @@ loadData();
 
 let heroSection = async function () {
     try {
-        const response = await fetch('https://api.aviationstack.com/v1/flights?access_key=19f31a9685a61b5f94aa96bd8e160d77');
+        const response = await fetch('https://api.aviationstack.com/v1/flights?access_key=46c4f799ad42c1b79a1a09acb661faef');
         const data = await response.json();
         console.log('API Response:', data);
         
