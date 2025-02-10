@@ -1,7 +1,7 @@
 async function loadData() {
     try {
         console.log('Fetching destinations...');
-        const response = await fetch('../src/public/top-picks.json');
+        const response = await fetch('../src/json/top-picks.json');
         const data = await response.json();
         console.log('Destinations loaded:', data);
 
@@ -174,7 +174,7 @@ let heroSection = async function () {
 
 let travelSpots = async function () {
     try {
-        const response = await fetch('../src/public/travelSpots.json');
+        const response = await fetch('../src/json/travelSpots.json');
         const data = await response.json();
 
         const container = document.querySelector('#travelSpotsContainer');
@@ -200,7 +200,7 @@ let travelSpots = async function () {
 
 var galary = async function () {
     try {
-        const response = await fetch('../src/public/galary.json');
+        const response = await fetch('../src/json/galary.json');
         const data = await response.json();
 
         const container = document.querySelector('#galaryContainer');
@@ -224,7 +224,7 @@ var galary = async function () {
 
 var galary2 = async function () {
     try {
-        const response = await fetch('../src/public/galary2.json');
+        const response = await fetch('../src/json/galary2.json');
         const data = await response.json();
 
         const container = document.querySelector('#galary2Container');
