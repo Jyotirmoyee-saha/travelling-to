@@ -1,7 +1,7 @@
 async function loadData() {
     try {
         console.log('Fetching destinations...');
-        const response = await fetch('../src/public/utils.js');
+        const response = await fetch('../src/public/top-picks.json');
         const data = await response.json();
         console.log('Destinations loaded:', data);
 
@@ -174,7 +174,7 @@ let heroSection = async function () {
 
 let travelSpots = async function () {
     try {
-        const response = await fetch('../src/public/travelSpots.js');
+        const response = await fetch('../src/public/travelSpots.json');
         const data = await response.json();
 
         const container = document.querySelector('#travelSpotsContainer');
@@ -200,7 +200,7 @@ let travelSpots = async function () {
 
 var galary = async function () {
     try {
-        const response = await fetch('../src/public/galary.js');
+        const response = await fetch('../src/public/galary.json');
         const data = await response.json();
 
         const container = document.querySelector('#galaryContainer');
@@ -224,7 +224,7 @@ var galary = async function () {
 
 var galary2 = async function () {
     try {
-        const response = await fetch('../src/public/galary2.js');
+        const response = await fetch('../src/public/galary2.json');
         const data = await response.json();
 
         const container = document.querySelector('#galary2Container');
@@ -255,7 +255,7 @@ async function handleSubmit(event) {
     try {
         const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSd9vbR-T2ChqHoghzk-CvKa-UB89PKwX0tbie7fBS6kY1Pt9w/formResponse', {
             method: 'POST',
-            mode: 'no-cors', // This is important for Google Forms
+           // mode: 'no-cors', // This is important for Google Forms  
             body: formData
         });
 
@@ -271,7 +271,7 @@ async function handleSubmit(event) {
         console.error('Error:', error);
         alert('Something went wrong. Please try again later.');
     }
-}
+};
 
 document.addEventListener('click', function(event) {
     const fromContainer = document.querySelector('.from-container');
